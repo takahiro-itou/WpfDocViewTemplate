@@ -65,7 +65,7 @@ Dim result As Integer
 Dim outText As String
 Dim objWrapper As SampleWrapper.Common.SampleDocument
 
-    objWrapepr = New SampleWrapper.Common.SampleDocument()
+    objWrapper = New SampleWrapper.Common.SampleDocument()
     objWrapper.setMessage(message)
     result = objWrapper.countAlphabet()
 
