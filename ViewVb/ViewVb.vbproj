@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Cli.Net8\Wrapper.Net80.vcxproj" />
     <ProjectReference Include="..\WpfControl\WpfControl.csproj" />
   </ItemGroup>
 
