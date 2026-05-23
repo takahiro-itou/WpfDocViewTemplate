@@ -10,12 +10,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wrapper.Net48", "View\Cli.NetFramework4.8\Wrapper.Net48.vcxproj", "{39572160-04E9-4F8F-BA9F-422747AD772F}"
 EndProject
 
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsControl", "View\WinFormsControl\WinFormsControl.NetOld.csproj", "{58D5A5EA-55FA-43CA-B205-7B1312FE1A79}"
-EndProject
-
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "ViewVb", "View\ViewVb\ViewVb.NetOld.vbproj", "{3446924D-6058-4767-B215-8FDBAEF1756C}"
-EndProject
-
 Global
     GlobalSection(SolutionConfigurationPlatforms) = preSolution
         Debug|Any CPU = Debug|Any CPU
