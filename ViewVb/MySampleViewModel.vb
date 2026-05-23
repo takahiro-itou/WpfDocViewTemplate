@@ -51,12 +51,29 @@ Private Sub ExecuteRunButtonCommand()
 ''--------------------------------------------------------------------
 ''    「実行」ボタンをクリックした時の処理
 ''--------------------------------------------------------------------
-Dim outText As String
+    RunCount(Me.InputText)
+End Sub
 
-    outText = $"Input is {Me.InputText} !"
+
+Private Sub RunCount(ByVal message As String)
+''--------------------------------------------------------------------
+''    サンプル動作
+''
+''    入力テキスト中のアルファベットの個数を数える
+''--------------------------------------------------------------------
+Dim result As Integer
+Dim outText As String
+Dim objWrapper As SampleWrapper.Common.SampleDocument
+
+    objWrapepr = New SampleWrapper.Common.SampleDocument()
+    objWrapper.setMessage(message)
+    result = objWrapper.countAlphabet()
+
+    outText = "入力した文字列中のアルファベットの個数は " & result
     Me.OutputText = outText
 
     MsgBox(outText, MsgBoxStyle.OkOnly)
 End Sub
+
 
 End Class
