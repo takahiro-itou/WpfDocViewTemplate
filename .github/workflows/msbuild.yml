@@ -17,12 +17,12 @@ jobs :
 
     steps :
       - name : Checkout
-        uses : actions/checkout@v4
+        uses : actions/checkout@v6
         with :
           submodules : recursive
 
       - name : Setup MSBuild
-        uses : microsoft/setup-msbuild@v2
+        uses : microsoft/setup-msbuild@v3
         with :
           msbuild-architecture : x64
 
@@ -32,7 +32,7 @@ jobs :
         shell : pwsh
 
       - name : Build
-        working-directory : "${{ github.workspace }}/View"
+        working-directory : "${{ github.workspace }}"
         run  : >
           msbuild -restore -t:Rebuild -p:Platform=x64 -p:Configuration="${{ matrix.build-type }}" "${{ env.solution-file }}"
         env  :
