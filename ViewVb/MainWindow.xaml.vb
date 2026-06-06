@@ -19,7 +19,7 @@ Private Sub RunSample(ByVal message As String)
 Dim outText As String
 
     outText = $"入力した文字列は {message} です"
-    ' SampleControl1.OutputText = outText
+    SampleControl1.OutputText = outText
     MsgBox(outText, MsgBoxStyle.OkOnly)
 End Sub
 

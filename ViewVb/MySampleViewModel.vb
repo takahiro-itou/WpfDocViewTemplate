@@ -7,16 +7,17 @@ Imports WpfControl.Sample
 
 
 Public Class MySampleViewModel
-        Inherits WpfControl.Sample.AbstractSampleViewModel
+        Inherits WpfControl.Sample.SampleViewModel
 
 Private ReadOnly m_runButtonCommand As WpfControl.Common.SimpleCommand
 
 
-Public Sub New()
+Public Sub New(ByVal model As MySampleModel)
 ''--------------------------------------------------------------------
 ''    コンストラクタ
 ''--------------------------------------------------------------------
 
+    MyBase.New(model)
     Me.m_runButtonCommand = New WpfControl.Common.SimpleCommand(
         Sub(ByVal parameter As Object)
             ExecuteRunButtonCommand()
@@ -47,7 +48,7 @@ Protected Overrides Sub raiseCanExecuteChanged()
 End Sub
 
 
-Private Sub ExecuteRunButtonCommand()
+Protected Overrides Sub ExecuteRunButtonCommand()
 ''--------------------------------------------------------------------
 ''    「実行」ボタンをクリックした時の処理
 ''--------------------------------------------------------------------
