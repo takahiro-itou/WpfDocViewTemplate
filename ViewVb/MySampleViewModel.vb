@@ -71,7 +71,7 @@ Dim objWrapper As SampleWrapper.Common.SampleDocument
     result = objWrapper.countAlphabet()
 
     outText = "入力した文字列中のアルファベットの個数は " & result
-    Me.m_model.setOutputText(outText)
+    ' Me.m_model.setOutputText(outText)
 
     MsgBox(outText, MsgBoxStyle.OkOnly)
 End Sub
