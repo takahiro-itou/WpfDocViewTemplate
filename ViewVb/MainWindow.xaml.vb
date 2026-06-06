@@ -1,12 +1,15 @@
 ﻿
 Public Class MainWindow
 
+Private m_model As MySampleModel
+
 Public Sub New()
 ''--------------------------------------------------------------------
 ''    コンストラクタ
 ''--------------------------------------------------------------------
     InitializeComponent()
-    SampleControl1.ViewModel = New MySampleViewModel()
+    Me.m_model = New MySampleModel()
+    SampleControl1.ViewModel = New MySampleViewModel(m_model)
 End Sub
 
 Private Sub RunSample(ByVal message As String)
@@ -16,7 +19,7 @@ Private Sub RunSample(ByVal message As String)
 Dim outText As String
 
     outText = $"入力した文字列は {message} です"
-    SampleControl1.OutputText = outText
+    ' SampleControl1.OutputText = outText
     MsgBox(outText, MsgBoxStyle.OkOnly)
 End Sub
 
