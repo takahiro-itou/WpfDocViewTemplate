@@ -3,7 +3,7 @@ using WpfControl.Sample;
 
 namespace  ViewCs  {
 
-public  MySampleModel : WpfControl.Sample.AbstractSampleModel
+public  class  MySampleModel : WpfControl.Sample.AbstractSampleModel
 {
 
     //----------------------------------------------------------------

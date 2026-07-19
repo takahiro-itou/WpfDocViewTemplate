@@ -11,7 +11,7 @@ public  partial class  MainWindow : Window
     public  MainWindow()
     {
         InitializeComponent();
-        this.m_model = New MySampleModel();
+        this.m_model = new MySampleModel();
         this.SampleControl1.ViewModel =
             new WpfControl.Sample.SampleViewModel(this.m_model);
     }
