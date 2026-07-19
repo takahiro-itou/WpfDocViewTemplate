@@ -3,4 +3,4 @@
 	url  = ../LibraryTemplate.git
 [submodule "WpfControl"]
 	path = WpfControl
-	url  = ../WpfControlLibrary.git
+	url  = ../../takahiro-itou/WpfControlLibrary.git
