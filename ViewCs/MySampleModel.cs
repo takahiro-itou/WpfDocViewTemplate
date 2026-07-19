@@ -13,7 +13,7 @@ public  class  MySampleModel : WpfControl.Sample.AbstractSampleModel
     public  override  void
     executeCommand()
     {
-        RunCount(this.InputText);
+        runCount(this.InputText);
     }
 
     //----------------------------------------------------------------

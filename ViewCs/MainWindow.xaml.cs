@@ -1,4 +1,6 @@
 ﻿
+using System.Windows;
+
 namespace  ViewCs  {
 
 public  partial class  MainWindow : Window
