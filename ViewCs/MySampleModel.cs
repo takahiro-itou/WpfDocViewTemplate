@@ -1,4 +1,6 @@
 
+using System.Windows;
+
 using WpfControl.Sample;
 
 namespace  ViewCs  {
@@ -35,6 +37,11 @@ public  class  MySampleModel : WpfControl.Sample.AbstractSampleModel
 
         outText = $"入力した文字列中のアルファベットの個数は {result}";
         this.setOutputText(outText);
+        MessageBox.Show(
+                outText, "Sample",
+                MessageBoxButtons.OK,
+                MessageBoxButtons.Asterisk);
+        return;
     }
 
 }
