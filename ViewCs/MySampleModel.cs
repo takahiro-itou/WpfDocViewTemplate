@@ -39,8 +39,8 @@ public  class  MySampleModel : WpfControl.Sample.AbstractSampleModel
         this.setOutputText(outText);
         MessageBox.Show(
                 outText, "Sample",
-                MessageBoxButtons.OK,
-                MessageBoxButtons.Asterisk);
+                MessageBoxButton.OK,
+                MessageBoxImage.Asterisk);
         return;
     }
 
