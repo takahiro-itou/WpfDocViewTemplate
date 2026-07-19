@@ -33,7 +33,7 @@ public  class  MySampleModel : WpfControl.Sample.AbstractSampleModel
         objWrapper.setMessage(message);
         result = objWrapper.countAlphabet();
 
-        outText = $"入力した文字列中のアルファベットの個数は {result}"
+        outText = $"入力した文字列中のアルファベットの個数は {result}";
         this.setOutputText(outText);
     }
 
