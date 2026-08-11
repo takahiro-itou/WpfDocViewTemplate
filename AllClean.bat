@@ -1,33 +1,37 @@
 
-msbuild  -restore  -t:Clean     ^
+set  solution=SampleView
+set  target=Clean
+
+
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Release"  -p:Platform=x64     ^
-    SampleView.sln
+    "%solution%.sln"
 
-msbuild  -restore  -t:Clean     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Debug"    -p:Platform=x64     ^
-    SampleView.sln
+    "%solution%.sln"
 
-msbuild  -restore  -t:Clean     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Release"  -p:Platform=x86     ^
-    SampleView.sln
+    "%solution%.sln"
 
-msbuild  -restore  -t:Clean     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Debug"    -p:Platform=x86     ^
-    SampleView.sln
+    "%solution%.sln"
 
 
-msbuild  -restore  -t:Clean     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Release"  -p:Platform=x64     ^
-    SampleView.NetOld.sln
+    "%solution%.NetOld.sln"
 
-msbuild  -restore  -t:Clean     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Debug"    -p:Platform=x64     ^
-    SampleView.NetOld.sln
+    "%solution%.NetOld.sln"
 
-msbuild  -restore  -t:Clean     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Release"  -p:Platform=x86     ^
-    SampleView.NetOld.sln
+    "%solution%.NetOld.sln"
 
-msbuild  -restore  -t:Clean     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Debug"    -p:Platform=x86     ^
-    SampleView.NetOld.sln
+    "%solution%.NetOld.sln"
