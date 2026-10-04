@@ -1,5 +1,9 @@
 
-set  solution=SampleView
+setlocal
+set  script_dir=%~dp0
+
+CALL  "%script_dir%Config\Common.cnf.bat"
+
 set  target=Clean
 
 
