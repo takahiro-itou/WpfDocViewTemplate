@@ -5,10 +5,9 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <LangVersion>8.0</LangVersion>
     <OutputType>WinExe</OutputType>
-    <Platforms>x64;x86;Any CPU</Platforms>
+    <Platforms>x64;x86</Platforms>
     <RootNamespace>ViewCs</RootNamespace>
     <TargetFrameworks>
-      net45;
       net48;
     </TargetFrameworks>
     <UseWPF>true</UseWPF>
