@@ -3,8 +3,9 @@
 
   <PropertyGroup>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Nullable>enable</Nullable>
     <OutputType>WinExe</OutputType>
-    <Platforms>x86;x64</Platforms>
+    <Platforms>x64;x86;Any CPU</Platforms>
     <RootNamespace>ViewCs</RootNamespace>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
@@ -13,16 +14,10 @@
   <Import Project="..\Props\OutputApps.props" />
 
   <ItemGroup>
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Cli.Net8\Wrapper.Net80.vcxproj" />
     <ProjectReference Include="..\WpfControl\WpfControl.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Include="MainWindow.xaml.cs" />
-    <Compile Include="MySampleModel.cs" />
-  </ItemGroup>
+  <Import Project="Targets.props" />
 
 </Project>
