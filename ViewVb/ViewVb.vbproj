@@ -13,16 +13,10 @@
   <Import Project="..\Props\OutputApps.props" />
 
   <ItemGroup>
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Cli.Net8\Wrapper.Net80.vcxproj" />
     <ProjectReference Include="..\WpfControl\WpfControl.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Include="MainWindow.xaml.vb" />
-    <Compile Include="MySampleModel.vb" />
-  </ItemGroup>
+  <Import Project="Targets.props" />
 
 </Project>

@@ -9,6 +9,13 @@
     Title="MainWindow"
     Height="448" Width="384"
 >
+  <Window.Icon>
+    <Binding
+        Source="Resources/MainWindowEmbedded.ico"
+        FallbackValue="{x:Null}"
+        TargetNullValue="{x:Null}" />
+  </Window.Icon>
+
   <StackPanel Orientation="Vertical">
     <WpfControl.Sample:SampleControl
         x:Name="SampleControl1"
