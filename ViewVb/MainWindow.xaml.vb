@@ -1,4 +1,9 @@
 ﻿
+Imports System
+Imports System.Windows
+Imports System.Windows.Media.Imaging
+
+
 Public Class MainWindow
 
 Private m_model As MySampleModel
