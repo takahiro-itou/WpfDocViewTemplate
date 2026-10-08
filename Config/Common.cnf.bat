@@ -1,3 +1,3 @@
 
 set  solution=SampleView
-set  config="Debug"
+set  config="Release"
