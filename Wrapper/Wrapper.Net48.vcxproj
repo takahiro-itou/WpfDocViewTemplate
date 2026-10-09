@@ -46,27 +46,8 @@
   </ItemGroup>
 
   <Import Project="$(MSBuildThisFileDirectory)Props\PreCompile.props" />
+  <Import Project="$(MSBuildThisFileDirectory)Targets.props" />
 
-  <ItemGroup>
-    <ClInclude Include="..\Wrapper\resource.h" />
-    <ClInclude Include="..\Wrapper\Stdafx.h" />
-    <ClInclude Include="..\Wrapper\Wrapper.h" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ClCompile Include="..\Wrapper\AssemblyInfo.cpp" />
-    <ClCompile Include="..\Wrapper\Wrapper.cpp" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Text Include="..\Wrapper\ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="..\Wrapper\app.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\Wrapper\app.ico" />
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.vcxproj">
       <Project>{64d47941-c76a-4448-bae1-62de0b4c8ac5}</Project>
