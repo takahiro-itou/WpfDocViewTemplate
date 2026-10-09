@@ -40,6 +40,7 @@
   -->
 
   <Import Project="$(MSBuildThisFileDirectory)Props\PreCompile.props" />
+  <Import Project="$(MSBuildThisFileDirectory)Props\LinkOptions.props" />
   <Import Project="$(MSBuildThisFileDirectory)Targets.props" />
 
   <ItemGroup>
