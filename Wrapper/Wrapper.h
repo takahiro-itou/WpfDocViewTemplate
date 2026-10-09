@@ -16,6 +16,11 @@
 
 #include    "Sample/Common/SampleDocument.h"
 
+#if !defined( SAMPLE_WRAPPER_INCLUDED_WRAPPER_NAMESPACE_H )
+#    include    "WrapperNameSpace.h"
+#endif
+
+
 using namespace System;
 
 namespace  SampleWrapper  {
