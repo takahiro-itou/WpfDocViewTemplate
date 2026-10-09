@@ -128,7 +128,7 @@ public:
 //
 private:
 
-    typedef     Sample::Common::SampleDocument  WrapTarget;
+    typedef     CoreNs::Common::SampleDocument  WrapTarget;
 
     WrapTarget  *   m_ptrObj;
 };
