@@ -4,6 +4,7 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PreCompile.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <AdditionalDependencies>
@@ -13,7 +14,7 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
-    <ClCompile Include="..\Wrapper\Stdafx.cpp">
+    <ClCompile Include="..\Wrapper\PreCompile.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
