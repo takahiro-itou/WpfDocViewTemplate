@@ -68,4 +68,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 
+  <data name="ButtonClear" xml:space="preserve">
+    <value>_Clear</value>
+  </data>
+  <data name="ButtonRun" xml:space="preserve">
+    <value>_Run</value>
+  </data>
+  <data name="LabelInput" xml:space="preserve">
+    <value>Input:</value>
+  </data>
+  <data name="LabelOutput" xml:space="preserve">
+    <value>Output:</value>
+  </data>
+
 </root>
