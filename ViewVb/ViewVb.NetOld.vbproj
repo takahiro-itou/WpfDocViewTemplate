@@ -12,7 +12,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <Import Project="..\Props\OutputApps.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\Lang\ResGen.NetSdk.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\..\Props\OutputApps.props" />
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net48' ">
     <ProjectReference Include="..\Wrapper\Wrapper.Net48.vcxproj" />
@@ -21,7 +22,7 @@
     <ProjectReference Include="..\WpfControl\WpfControl.NetOld.csproj" />
   </ItemGroup>
 
-  <Import Project="Targets.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\Targets.props" />
 
   <ItemGroup>
     <Reference Include="mscorlib" />
