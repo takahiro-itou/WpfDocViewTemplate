@@ -16,8 +16,8 @@
 
   <!--  C++/CLI ラッパーの設定  -->
   <PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.vcxproj' And '$(TargetFramework)' != ''">
-    <IntDir>$(OBJ_BASE_DIR)\$(OUTPUT_CONFIG)\$(MSBuildProjectName)\</IntDir>
-    <OutDir>$(LIB_BASE_DIR)\$(OUTPUT_CONFIG)\$(MSBuildProjectName)\</OutDir>
+    <IntDir>$(OBJ_BASE_DIR)\$(OUTDIR_CONFIG)\$(MSBuildProjectName)\</IntDir>
+    <OutDir>$(LIB_BASE_DIR)\$(OUTDIR_CONFIG)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
 
   <!--  C++ プロジェクトの設定  -->

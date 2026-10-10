@@ -10,7 +10,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <Import Project="..\Props\OutputApps.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\Lang\ResGen.NetSdk.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\..\Props\OutputApps.props" />
 
   <ItemGroup>
     <ProjectReference Include="..\Wrapper\Wrapper.Net80.vcxproj" />
