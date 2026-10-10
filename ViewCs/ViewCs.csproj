@@ -18,6 +18,7 @@
     <ProjectReference Include="..\WpfControl\WpfControl.csproj" />
   </ItemGroup>
 
-  <Import Project="Targets.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\Targets.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\Lang\ResGen.NetSdk.props" />
 
 </Project>
