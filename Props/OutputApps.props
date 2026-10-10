@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\$(MSBuildProjectName)</IntDir>
+    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)</IntDir>
     <IntermediateOutputPath>$(IntDir)\</IntermediateOutputPath>
     <_IntermediateOutputPath>$(IntermediateOutputPath)</_IntermediateOutputPath>
 

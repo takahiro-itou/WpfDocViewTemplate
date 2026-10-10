@@ -9,7 +9,7 @@
   <!--  NET プロジェクト (C#, VB.NET) の設定  -->
   <PropertyGroup
       Condition="'$(MSBuildProjectExtension)' != '.vcxproj'">
-    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\$(MSBuildProjectName)</IntDir>
+    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)</IntDir>
     <IntermediateOutputPath>$(IntDir)\</IntermediateOutputPath>
     <_IntermediateOutputPath>$(IntermediateOutputPath)</_IntermediateOutputPath>
 
@@ -18,13 +18,13 @@
 
   <!--  C++/CLI ラッパーの設定  -->
   <PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.vcxproj' And '$(TargetFramework)' != ''">
-    <IntDir>$(OBJ_BASE_DIR)\$(OUTDIR_CONFIG)\$(MSBuildProjectName)\</IntDir>
+    <IntDir>$(OBJ_BASE_DIR)\$(OUTDIR_CONFIG)\</IntDir>
     <OutDir>$(LIB_BASE_DIR)\$(OUTDIR_CONFIG)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
 
   <!--  C++ プロジェクトの設定  -->
   <PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.vcxproj' And '$(TargetFramework)' == ''">
-    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\Native\$(MSBuildProjectName)\</IntDir>
+    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\Native\</IntDir>
     <OutDir>$(LIB_BASE_DIR)\$(CONFIG_NAME)\Native\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
 
