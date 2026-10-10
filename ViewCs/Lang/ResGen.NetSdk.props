@@ -2,11 +2,16 @@
 <Project>
 
   <ItemGroup>
-    <EmbeddedResource  Update="Lang\String.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>String.Designer.cs</LastGenOutput>
+    <EmbeddedResource  Update="Lang\Strings.resx">
+      <Generator>MSBuild:Compile</Generator>
+      <StronglyTypedFileName>
+        $(IntermediateOutputPath)\Lang\Strings.Designer.cs
+      </StronglyTypedFileName>
+      <StronglyTypedLanguage>CSharp</StronglyTypedLanguage>
+      <StronglyTypedNamespace>$(RootNamespace).Lang</StronglyTypedNamespace>
+      <StronglyTypedClassName>Strings</StronglyTypedClassName>
     </EmbeddedResource>
-    <EmbeddedResource  Update="Lang\String.ja.resx" />
+    <EmbeddedResource  Update="Lang\Strings.ja.resx" />
   </ItemGroup>
 
 </Project>
