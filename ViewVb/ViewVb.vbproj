@@ -2,7 +2,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <CoreCompileDependsOn>PrepareResources;$(CoreCompileDependsOn)</CoreCompileDependsOn>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <OutputType>WinExe</OutputType>
     <Platforms>x64;x86</Platforms>
