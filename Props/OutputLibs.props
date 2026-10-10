@@ -11,6 +11,7 @@
       Condition="'$(MSBuildProjectExtension)' != '.vcxproj'">
     <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\$(MSBuildProjectName)\</IntDir>
     <IntermediateOutputPath>$(IntDir)</IntermediateOutputPath>
+    <_IntermediateOutputPath>$(IntermediateOutputPath)</_IntermediateOutputPath>
     <OutDir>$(LIB_BASE_DIR)\$(OUTDIR_CONFIG)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
 

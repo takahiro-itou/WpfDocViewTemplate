@@ -4,13 +4,13 @@
   <PropertyGroup>
     <CONFIG_NAME>$(Platform)-$(Configuration)</CONFIG_NAME>
     <OUTDIR_CONFIG>$(CONFIG_NAME)\$(TargetFramework)</OUTDIR_CONFIG>
-    <INT_DIR>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\$(MSBuildProjectName)</INT_DIR>
   </PropertyGroup>
 
   <PropertyGroup>
     <BaseIntermediateOutputPath>$(OBJ_BASE_DIR)\</BaseIntermediateOutputPath>
-    <IntDir>$(INT_DIR)\</IntDir>
+    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\$(MSBuildProjectName)\</IntDir>
     <IntermediateOutputPath>$(INT_DIR)\</IntermediateOutputPath>
+    <_IntermediateOutputPath>$(IntermediateOutputPath)</_IntermediateOutputPath>
 
     <OutDir>$(BIN_BASE_DIR)\$(OUTDIR_CONFIG)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
