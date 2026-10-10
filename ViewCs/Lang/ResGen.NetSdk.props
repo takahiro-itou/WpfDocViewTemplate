@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+  <ItemGroup>
+    <EmbeddedResource  Update="Lang\Strings.resx">
+      <Generator>MSBuild:Compile</Generator>
+      <StronglyTypedFileName>$(IntermediateOutputPath)\Strings.Designer.cs</StronglyTypedFileName>
+      <StronglyTypedLanguage>C#</StronglyTypedLanguage>
+      <StronglyTypedNamespace>$(RootNamespace).Lang</StronglyTypedNamespace>
+      <StronglyTypedClassName>Strings</StronglyTypedClassName>
+    </EmbeddedResource>
+    <EmbeddedResource  Update="Lang\Strings.ja.resx" />
+  </ItemGroup>
+
+</Project>
