@@ -11,7 +11,7 @@
     <IntermediateOutputPath>$(IntDir)\</IntermediateOutputPath>
     <_IntermediateOutputPath>$(IntermediateOutputPath)</_IntermediateOutputPath>
 
-    <OutDir>$(BIN_BASE_DIR)\$(OUTDIR_CONFIG)\$(MSBuildProjectName)\</OutDir>
+    <OutDir>$(BIN_BASE_DIR)\$(OUTDIR_CONFIG)\</OutDir>
   </PropertyGroup>
 
 </Project>
