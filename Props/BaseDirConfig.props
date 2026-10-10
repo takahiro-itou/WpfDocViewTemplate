@@ -7,9 +7,11 @@
     <BIN_BASE_DIR>$(SolutionDir)Bin</BIN_BASE_DIR>
   </PropertyGroup>
 
+  <!--
   <PropertyGroup Condition="'$(MSBuildProjectExtension)' != '.vcxproj'">
     <BaseIntermediateOutputPath>$(OBJ_BASE_DIR)\</BaseIntermediateOutputPath>
     <MSBuildProjectExtensionsPath>$(OBJ_BASE_DIR)\</MSBuildProjectExtensionsPath>
   </PropertyGroup>
+  -->
 
 </Project>
