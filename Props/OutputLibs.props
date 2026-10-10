@@ -2,21 +2,15 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
-    <OBJ_BASE_DIR>$(SolutionDir)Objs</OBJ_BASE_DIR>
-    <LIB_BASE_DIR>$(SolutionDir)Libs</LIB_BASE_DIR>
-    <BIN_BASE_DIR>$(SolutionDir)Bin</BIN_BASE_DIR>
     <CONFIG_NAME>$(Platform)-$(Configuration)</CONFIG_NAME>
     <OUTDIR_CONFIG>$(CONFIG_NAME)\$(TargetFramework)</OUTDIR_CONFIG>
-    <INT_DIR>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\$(MSBuildProjectName)</INT_DIR>
   </PropertyGroup>
 
   <!--  NET プロジェクト (C#, VB.NET) の設定  -->
   <PropertyGroup
-      Condition="'$(MSBuildProjectExtension)' == '.csproj' Or '$(MSBuildProjectExtension)' == '.vbproj'">
-    <BaseIntermediateOutputPath>$(OBJ_BASE_DIR)\</BaseIntermediateOutputPath>
-    <IntDir>$(INT_DIR)\</IntDir>
-    <IntermediateOutputPath>$(INT_DIR)\</IntermediateOutputPath>
-
+      Condition="'$(MSBuildProjectExtension)' != '.vcxproj'">
+    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\$(MSBuildProjectName)\</IntDir>
+    <IntermediateOutputPath>$(IntDir)</IntermediateOutputPath>
     <OutDir>$(LIB_BASE_DIR)\$(OUTDIR_CONFIG)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
 
