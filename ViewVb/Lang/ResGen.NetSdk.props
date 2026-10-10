@@ -4,6 +4,7 @@
   <ItemGroup>
     <EmbeddedResource  Update="Lang\Strings.resx">
       <Generator>MSBuild:Compile</Generator>
+      <PublicClass>true</PublicClass>
       <StronglyTypedFileName>$(IntermediateOutputPath)\Strings.Designer.vb</StronglyTypedFileName>
       <StronglyTypedLanguage>VB</StronglyTypedLanguage>
       <StronglyTypedNamespace>$(RootNamespace).Lang</StronglyTypedNamespace>
