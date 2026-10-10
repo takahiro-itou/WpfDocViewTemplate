@@ -26,11 +26,11 @@
 
   <!--  C++/CLI ラッパーの設定  -->
   <PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.vcxproj' And '$(TargetFramework)' != ''">
-    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\(MSBuildProjectName)\</IntDir>
+    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.vcxproj' And '$(TargetFramework)' == ''">
-    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\(MSBuildProjectName)\Native\</IntDir>
+    <IntDir>$(OBJ_BASE_DIR)\$(CONFIG_NAME)\$(MSBuildProjectName)\Native\</IntDir>
   </PropertyGroup>
 
 </Project>
