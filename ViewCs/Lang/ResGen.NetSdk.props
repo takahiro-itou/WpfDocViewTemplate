@@ -4,7 +4,7 @@
   <ItemGroup>
     <EmbeddedResource  Update="Lang\Strings.resx">
       <Generator>MSBuild:Compile</Generator>
-      <StronglyTypedFileName>$(IntermediateOutputPath)\Lang\Strings.Designer.cs</StronglyTypedFileName>
+      <StronglyTypedFileName>$(IntermediateOutputPath)\Strings.Designer.cs</StronglyTypedFileName>
       <StronglyTypedLanguage>CSharp</StronglyTypedLanguage>
       <StronglyTypedNamespace>$(RootNamespace).Lang</StronglyTypedNamespace>
       <StronglyTypedClassName>Strings</StronglyTypedClassName>
