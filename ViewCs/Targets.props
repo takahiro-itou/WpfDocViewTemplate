@@ -6,4 +6,11 @@
     <Compile Include="MySampleModel.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include="Lang\Strings.resx" />
+    <EmbeddedResource Include="Lang\Strings.ja.resx" />
+
+    <Compile Include="Lang\Strings.Designer.cs" />
+  </ItemGroup>
+
 </Project>
