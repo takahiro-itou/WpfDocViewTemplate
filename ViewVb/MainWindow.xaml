@@ -5,9 +5,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:ViewVb"
-    xmlns:WpfControl="clr-namespace:WpfControl;assembly=WpfControl"
+    xmlns:r="clr-namespace:ViewVb.Lang"
     xmlns:WpfControl.Sample="clr-namespace:WpfControl.Sample;assembly=WpfControl"
-    Title="MainWindow"
+    Title="{x:Static r:Strings.MainWindowTitle}"
     Height="448" Width="384"
 >
   <Window.Icon>
@@ -22,6 +22,10 @@
         x:Name="SampleControl1"
         Height="112"
         Margin="16,8,16,8"
+        ClearButtonLabel="{x:Static r:Strings.ButtonClear}"
+        InputLabel="{x:Static r:Strings.LabelInput}"
+        OutputLabel="{x:Static r:Strings.LabelOutput}"
+        RunButtonLabel="{x:Static r:Strings.ButtonRun}"
     />
   </StackPanel>
 

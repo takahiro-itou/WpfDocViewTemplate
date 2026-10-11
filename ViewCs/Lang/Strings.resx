@@ -80,5 +80,8 @@
   <data name="LabelOutput" xml:space="preserve">
     <value>Output:</value>
   </data>
+  <data name="MainWindowTitlet" xml:space="preserve">
+    <value>Main Window</value>
+  </data>
 
 </root>
