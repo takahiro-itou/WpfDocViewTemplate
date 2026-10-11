@@ -24,5 +24,6 @@
   </ItemGroup>
 
   <Import Project="$(MSBuildThisFileDirectory)\Targets.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\Resources.props" />
 
 </Project>
