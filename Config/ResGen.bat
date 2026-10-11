@@ -20,7 +20,7 @@ IF %errorlevel% neq 0 (
 resgen  ^
     ViewVb\Lang\Strings.resx    ^
     ViewVb\Lang\ViewVb.Lang.Strings.resources   ^
-    /str:vb,ViewVb.Lang,Strings,ViewVb\Lang\Strings.Designer.vb     ^
+    /str:vb,My.Resources,Strings,ViewVb\Lang\Strings.Designer.vb    ^
     /publicClass
 
 IF %errorlevel% neq 0 (
