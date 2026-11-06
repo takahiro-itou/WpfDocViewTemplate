@@ -14,7 +14,7 @@ jobs :
 
     steps :
       - name : Checkout
-        uses : actions/checkout@v6
+        uses : actions/checkout@v7
         with :
           submodules : recursive
 
@@ -28,7 +28,7 @@ jobs :
 
       - name : Install CppUnit
         id   : install-cppunit
-        uses : takahiro-itou/install-cppunit-action@v1.1.0
+        uses : takahiro-itou/install-cppunit-action@v1.1.1
         with :
           install-prefix : "${{ matrix.with-cppunit }}"
 
